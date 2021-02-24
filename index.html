@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+    <title>ToDo List</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="wrapper__form">
+            <p class="wrapper__section_title">New task</p>
+            <form name="item-form" class="form js_form">
+
+                <div class="form__row">
+
+                    <label for="taskTitle" class="form__label">Task title</label>
+                    <input type="text" name="taskTitle" id="taskTitle" class="form__input">
+
+                </div>
+
+                <div class="form__row">
+
+                    <label for="taskMessage" class="form__label">Task message</label>
+                    <input type="text" name="taskMessage" id="taskMessage" class="form__input">
+
+                </div>
+
+                <div class="form__row">
+
+                    <label for="taskMarker" class="form__label">Task marker</label>
+                    <select name="taskMarker" id="taskMarker" class="form__select">
+                        <option selected value="gray">Gray</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="orange">Orange</option>
+                        <option value="red">Red</option>
+                    </select>
+
+                </div>
+
+                <button type="submit" class="form__submit_btn js_formSubmitBtn">Submit</button>
+
+            </form>
+        </div>
+
+
+        <div class="wrapper__filters">
+
+            <p class="wrapper__section_title">Filter</p>
+            <form name="filters-form" class="form form--filters js_filtersForm">
+
+                <div class="form__row">
+
+                    <label for="entry-date" class="form__label">Entry date</label>
+                    <select name="entry-date" id="entry-date" class="form__select js_filterByDate">
+                        <option selected value="newest">Newest first</option>
+                        <option value="oldest">Oldest first</option>
+                    </select>
+
+                </div>
+
+                <div class="form__row">
+
+                    <label for="entry-date" class="form__label">By marker</label>
+                    <select name="entry-date" id="entry-date" class="form__select js_filterByMarker">
+                        <option selected value="all">All</option>
+                        <option value="gray">Gray</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="orange">Orange</option>
+                        <option value="red">Red</option>
+                    </select>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="wrapper__tasks js_tasksWrapper show-all-markers">
+        </div>
+
+    </div>
+
+
+    <script src="/static/js/scripts.min.js"></script>
+
+</body>
+</html>

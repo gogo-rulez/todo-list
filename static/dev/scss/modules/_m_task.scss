@@ -1,0 +1,105 @@
+$t: task;
+
+.#{$t} {
+    position: relative;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    padding: 50px 20px;
+    border: 1px solid #0e0e0e;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    &.is-gray {
+        &::before {
+            background-color: gray;
+        }
+
+        .show-gray-markers & {
+            display: flex;
+        }
+    }
+    &.is-green {
+        &::before {
+            background-color: green;
+        }
+
+        .show-green-markers & {
+            display: flex;
+        }
+    }
+    &.is-yellow {
+        &::before {
+            background-color: yellow;
+        }
+
+        .show-yellow-markers & {
+            display: flex;
+        }
+    }
+    &.is-orange {
+        &::before {
+            background-color: orange;
+        }
+
+        .show-orange-markers & {
+            display: flex;
+        }
+    }
+    &.is-red {
+        &::before {
+            background-color: red;
+        }
+
+        .show-red-markers & {
+            display: flex;
+        }
+    }
+
+    .show-all-markers & {
+        display: flex;
+    }
+
+    &__inner_wrap {
+        width: 100%;
+    }
+
+    &__title {
+        border-bottom: 1px solid #0e0e0e;
+    }
+
+    &__message {
+        margin: 15px 0 0;
+    }
+
+    &__edit_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        background-color: #0e0e0e;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(#0e0e0e, .8);
+        }
+    }
+}

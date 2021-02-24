@@ -1,0 +1,18 @@
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .task.is-gray {
+    background-color: gray; }
+  .task.is-green {
+    background-color: green; }
+  .task.is-yellow {
+    background-color: yellow; }
+  .task.is-orange {
+    background-color: orange; }
+  .task.is-red {
+    background-color: red; }
