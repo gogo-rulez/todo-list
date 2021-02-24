@@ -94,7 +94,6 @@ const getItemData = () => {
                 tasks.push(newObject);
             } else {
                 tasks.unshift(newObject);
-                console.log('tasks', tasks);
             }
 
             console.log('DATA FOR SERVER - NEW ENTRY');
@@ -236,8 +235,6 @@ const editItem = (id) => {
     const form = document.querySelector('.js_form');
     const objectKeys = Object.keys(itemData);
     const objectValues = Object.values(itemData);
-
-    console.log(objectKeys);
 
     objectKeys.forEach((key, index) => {
 
