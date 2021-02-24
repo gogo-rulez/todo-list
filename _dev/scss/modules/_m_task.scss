@@ -8,7 +8,7 @@ $t: task;
     width: 100%;
     max-width: 300px;
     padding: 50px 20px;
-    border: 1px solid #0e0e0e;
+    border: 1px solid $black;
     border-radius: 4px;
     margin: 0 auto;
     text-align: center;
@@ -26,7 +26,7 @@ $t: task;
 
     &.is-gray {
         &::before {
-            background-color: gray;
+            background-color: $gray;
         }
 
         .show-gray-markers & {
@@ -35,7 +35,7 @@ $t: task;
     }
     &.is-green {
         &::before {
-            background-color: green;
+            background-color: $green;
         }
 
         .show-green-markers & {
@@ -44,7 +44,7 @@ $t: task;
     }
     &.is-yellow {
         &::before {
-            background-color: yellow;
+            background-color: $yellow;
         }
 
         .show-yellow-markers & {
@@ -53,7 +53,7 @@ $t: task;
     }
     &.is-orange {
         &::before {
-            background-color: orange;
+            background-color: $orange;
         }
 
         .show-orange-markers & {
@@ -62,7 +62,7 @@ $t: task;
     }
     &.is-red {
         &::before {
-            background-color: red;
+            background-color: $red;
         }
 
         .show-red-markers & {
@@ -79,7 +79,7 @@ $t: task;
     }
 
     &__title {
-        border-bottom: 1px solid #0e0e0e;
+        border-bottom: 1px solid $black;
     }
 
     &__message {
@@ -92,14 +92,14 @@ $t: task;
         right: 10px;
         padding: 5px 10px;
         border-radius: 4px;
-        background-color: #0e0e0e;
+        background-color: $black;
         font-size: 12px;
         color: #fff;
         text-transform: uppercase;
         cursor: pointer;
 
         &:hover {
-            background-color: rgba(#0e0e0e, .8);
+            background-color: rgba($black, .8);
         }
     }
 }

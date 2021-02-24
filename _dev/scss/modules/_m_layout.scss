@@ -1,21 +1,17 @@
-body {
-    font-family: "Roboto", sans-serif;
-}
-
 $w: wrapper;
 
 .#{$w} {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1024px;
+    max-width: $desktop;
     padding: 0 20px;
     margin: 0 auto;
 
     &__form {
         margin: 25px 0 0;
 
-        @include min-screen(1024px) {
+        @include min-screen($desktop) {
             margin: 50px 0 0;
         }
     }
@@ -23,7 +19,7 @@ $w: wrapper;
     &__filters {
         margin: 35px 0 0;
 
-        @include min-screen(1024px) {
+        @include min-screen($desktop) {
             grid-template-columns: repeat(2, 1fr);
             margin: 50px 0 0;
         }
@@ -40,7 +36,7 @@ $w: wrapper;
             grid-gap: 20px;
         }
 
-        @include min-screen(1024px) {
+        @include min-screen($desktop) {
             grid-template-columns: repeat(4, 1fr);
             margin: 50px 0 0;
         }
@@ -50,7 +46,7 @@ $w: wrapper;
         font-size: 24px;
         margin: 0;
 
-        @include min-screen(1024px) {
+        @include min-screen($desktop) {
             margin: 0 0 15px;
         }
     }
